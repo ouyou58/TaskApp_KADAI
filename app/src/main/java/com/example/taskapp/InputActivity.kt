@@ -112,7 +112,7 @@ class InputActivity : AppCompatActivity() {
             // 新規作成の場合
             mTask = Task()
 
-            val taskRealmResults = realm.where(Task::class.java).findAll()
+            val taskRealmResults = realm.where(Task::class.java).findAll()  //where是创建的意思
 
             val identifier: Int =
                 if (taskRealmResults.max("id") != null) {
